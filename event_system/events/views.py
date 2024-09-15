@@ -50,7 +50,7 @@ class RegistrationView(
     mixins.DestroyModelMixin,
     generics.GenericAPIView
 ):
-    queryset = Registration.objects.all().select_related('event', 'participant')
+    queryset = Registration.objects.all()
     serializer_class = RegistrationSerializer
     permission_classes = [IsAuthenticated]
     pagination_class = StandardResultsSetPagination
