@@ -1,0 +1,41 @@
+
+### 2. **.gitignore**
+
+Create a `.gitignore` file in the root of your project with the following content:
+
+```gitignore
+# Python
+*.pyc
+__pycache__/
+
+# Environment
+env/
+venv/
+*.env
+
+# Django
+db.sqlite3
+
+# Logs
+*.log
+
+# Celery & Redis
+celerybeat-schedule
+*.pid
+
+# VSCode
+.vscode/
+
+# Virtualenv
+bin/
+lib/
+include/
+Scripts/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+event_system/static*
+event_system/*/migrations
+
